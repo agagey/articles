@@ -1,0 +1,32 @@
+<div class="uk-grid">
+    <div class="uk-width-8-10">
+        <div class="uk-grid">
+            <div class="uk-width-1-1 uk-text-center uk-margin-top uk-margin-bottom">
+                <h1>{#title#}</h1>
+            </div>
+            <div class="uk-width-1-1">
+
+                <article class="uk-article">
+                    <h3 class="uk-article-title">{#article_name#}</h3>
+                    <p>{#article_text#}</p><br><img src="{#article_photo#}" alt="">
+                    <hr class="uk-article-divider">
+                    <em>{#article_updated_at#}</em>
+                </article>
+
+            </div>
+            <div class="uk-width-1-1">
+                <div id="article_{#id#}" class="uk-panel j-article-list">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1 uk-text-right">
+                            <button class="uk-button uk-icon-pencil" data-id="{#id#}"> Редактировать</button>
+                            <button class="uk-button uk-icon-remove" data-id="{#id#}"> Удалить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-text-right">
+                <br><a href="/">Вернуться к списку статей</a>
+            </div>
+        </div>
+    </div>
+</div>

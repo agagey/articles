@@ -1,0 +1,46 @@
+<div class="uk-grid">
+    <div class="uk-width-8-10">
+        <div class="uk-grid">
+            <div class="uk-width-1-1 uk-text-center uk-margin-top uk-margin-bottom">
+                <h1>{#title#}</h1>
+            </div>
+            <div class="uk-width-1-1">
+
+                <form class="uk-form uk-form-horizontal" method="post" action="/createArticle" enctype="multipart/form-data">
+                    <fieldset>
+                        <div class="uk-form-row">
+                            <label class="uk-form-label" for="nameA">Название статьи:</label>
+                            <div class="uk-form-controls">
+                                <input id="nameA" type="text" name="name" value="" />
+                            </div>
+                        </div>
+
+                        <div class="uk-form-row">
+                            <label class="uk-form-label" for="textA">Текст:</label>
+                            <div class="uk-form-controls">
+                                <textarea name="text" id="textA" cols="30" rows="10" class="uk-width-1-1"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-form-row">
+                            <label class="uk-form-label" for="uploadA">Загрузить фотографию:</label>
+                            <div class="uk-form-controls">
+                                <input type="file" id="uploadA" name="photo" accept="image/*" />
+                            </div>
+                        </div>
+
+                        <div class="uk-form-row uk-text-center">
+                            <input type="submit" class="uk-button" value="Отправить" /><br>
+                            <hr><br>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="uk-width-1-1 uk-text-right">
+                <br><a href="/">Вернуться к списку статей</a>
+            </div>
+        </div>
+    </div>
+</div>
